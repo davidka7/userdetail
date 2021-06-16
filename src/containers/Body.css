@@ -1,0 +1,20 @@
+.body {
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/vectors/polygonal-mosaic-with-gray-gradient-abstract-geometric-background-low-vector-id1173291309?k=6&m=1173291309&s=612x612&w=0&h=kY4fOn8qv_uyFyfU6bVxEt8fPARf5-15Gt48qDdoM9s=");
+    position: relative;
+    flex-grow: 1;
+    
+    
+}
+
+.cards {
+    display: flex;
+    
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background: rgba(255, 255, 255, 0.7) ;
+  padding-left:25px; padding-right:25px;padding-top:20px;
+   margin-left:70px;
+   margin-right:70px;
+ box-shadow: 0 2px 4px 0 rgba(14, 13, 13, 0.2);
+}

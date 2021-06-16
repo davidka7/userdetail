@@ -1,0 +1,37 @@
+
+header {
+    position: relative;
+}
+
+header, footer {
+    position: relative;
+    font-size:40px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    font-size: 3vw;
+    height: 120px;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+}
+
+  
+footer {
+    
+  position: absolute;
+    justify-content: space-around;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    box-sizing: border-box;
+    bottom: 0;
+}
+
+a:link { 
+    color: rgb(240, 240, 249); 
+}
+
+a:visited { 
+    color: purple; 
+}
+
