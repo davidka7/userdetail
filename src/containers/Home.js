@@ -5,12 +5,7 @@ import Users from "../components/Users.js";
 import User from "../components/User.js";
 import DoesNotExist from "../components/DoesNotExist.js";
 import axios from "axios";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function Home() {
   const [state, setState] = useState({ loading: true, array: [] });
 
@@ -34,12 +29,7 @@ function Home() {
           <Switch>
             {" "}
             <div className="cards">
-              <Route
-                exact
-                path="/userdetail"
-                render={() => <Redirect to="/" />}
-              />
-              <Route exact path="/">
+              <Route exact path="/user">
                 {listUsers}
               </Route>
               <Route
@@ -47,7 +37,7 @@ function Home() {
                 path="/user/:name"
                 render={(props) => <User {...props} state={state} />}
               ></Route>
-              <Route exact path="/user" component={DoesNotExist}></Route>{" "}
+              {/* <Route exact path="/user" component={DoesNotExist}></Route>{" "} */}
             </div>
           </Switch>
         </Router>
