@@ -5,7 +5,12 @@ import Users from "../components/Users.js";
 import User from "../components/User.js";
 import DoesNotExist from "../components/DoesNotExist.js";
 import axios from "axios";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 function Home() {
   const [state, setState] = useState({ loading: true, array: [] });
 
