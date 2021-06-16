@@ -29,6 +29,11 @@ function Home() {
           <Switch>
             {" "}
             <div className="cards">
+              <Route
+                exact
+                path="/userdetail"
+                render={() => <Redirect to="/" />}
+              />
               <Route exact path="/">
                 {listUsers}
               </Route>
